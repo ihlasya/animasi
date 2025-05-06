@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Halaman Web dengan 3 Animasi</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: rgb(0, 247, 255);
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    /* 1. Animasi Fade In */
+    .fade-text {
+      font-size: 2em;
+      margin-bottom: 40px;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* 2. Animasi Gambar Berputar */
+    .spin-image {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 40px;
+     /* animation: spin 5s linear infinite; */
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* 3. Tombol Hover Animasi */
+    .animated-button {
+      padding: 12px 24px;
+      font-size: 1em;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .animated-button:hover {
+      background-color: #45a049;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="fade-text">Selamat Datang di Halaman Animasi BRIMOB Arsya!</div>
+  
+  <!-- Gunakan gambar dari internet atau ganti src -->
+  <img src="https://4.bp.blogspot.com/-qzCCtmU9SKA/Tx06eWh136I/AAAAAAAAEok/u7eMi0k1XLE/s1600/LAMBANG+STIKER+KORPS+BRIMOB.png" alt="Contoh Gambar" class="spin-image">
+
+  <button class="animated-button">Klik Saya</button>
+
+</body>
+</html>
