@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interval</title>
+    <style>
+        #lingkaranjs {
+            width: 30px;
+            height: 30px;
+            background-color: green;
+            border-radius: 505;
+            position: absolute;
+            left: 10x;
+            top: 100px;
+        }
+        </style>
+</head>
+<body>
+    <div class="lingkaran"> </div>
+
+    <script language="javascript">
+        const lingkaranjs = document.getElementById('lingkaranjs');
+        let opacity = 1;
+        const intervalid = setInterval(() => {
+            opacity -= 0.05;
+            lingkaranjs.style.opacty= opacity;
+            if (opacity <- 0) {
+                clearInterval(intervalid); // Hentikan interval jikaopasitas mencapai 0
+            }
+            }, 100); // Jalankan setiap 100ms
+</script>
+
+</body>
+</html>
